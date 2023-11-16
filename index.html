@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <script src="node_modules/three.terrain.js/build/THREE.Terrain.min.js"></script>
+      <script type="module">
+
+        
+
+    import {Game} from "./src/domains/game/Game.ts"
+    // Create a new game when the window is loaded
+    window.onload = () => {
+      window.game = new Game();
+    }
+  </script>
+    <div id="render-area"></div>
+    </div>
+    
+  </body>
+</html>
